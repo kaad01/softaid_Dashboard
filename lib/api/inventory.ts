@@ -4,7 +4,7 @@ import { Article, StandortArtikel } from '@/types/api';
 export const inventoryApi = {
   // Artikel endpoints
   getArticles: async () => {
-    const response = await api.get<Article[]>('/artikel');
+    const response = await api.get<Article[]>('/artikel/');
     return response.data;
   },
 

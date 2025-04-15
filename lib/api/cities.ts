@@ -4,7 +4,7 @@ import { City } from '@/types/api';
 export const citiesApi = {
   // Alle Städte abrufen
   getCities: async () => {
-    const response = await api.get<City[]>('/staedte');
+    const response = await api.get<City[]>('/staedte/');
     return response.data;
   },
 

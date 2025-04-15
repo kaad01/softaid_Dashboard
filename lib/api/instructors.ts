@@ -4,7 +4,7 @@ import { InstructorCreate, Instructor } from '@/types/api';
 export const instructorsApi = {
   // Get all instructors
   getInstructors: async () => {
-    const response = await api.get<Instructor[]>('/dozenten');
+    const response = await api.get<Instructor[]>('/dozenten/');
     return response.data;
   },
 

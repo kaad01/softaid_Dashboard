@@ -4,7 +4,7 @@ import { LocationCreate, Location, LocationInventory, ConditionsCreate } from '@
 export const locationsApi = {
   // Get all locations
   getLocations: async () => {
-    const response = await api.get<Location[]>('/standorte');
+    const response = await api.get<Location[]>('/standorte/');
     return response.data;
   },
 
